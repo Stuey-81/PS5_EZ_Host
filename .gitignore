@@ -1,0 +1,25 @@
+# General
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
+
+# Build outputs / binaries
+.pio/
+build/
+cmake-build*/
+*.elf
+*.map
+*.hex
+*.bin
+*.bin.gz
+*.sprx
+*.pkg
+*.zip
+*.7z
+*.rar
+
+# ESP32 images
+spiffs.bin
+firmware.bin
