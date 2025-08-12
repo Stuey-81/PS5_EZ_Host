@@ -1,0 +1,5 @@
+# Name,   Type, SubType, Offset,    Size,       Flags
+nvs,      data, nvs,      36864,     20480,
+otadata,  data, ota,      57344,     8192,
+app0,     app,  factory,  65536,     3145728,
+spiffs,   data, spiffs,   3211264,   13565952
