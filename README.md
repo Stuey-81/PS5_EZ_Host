@@ -12,7 +12,7 @@ Modern UMTX2 ESP32-S3 Web Utility Host (v1.0.3)
 PS5_EZ_Host is a self-contained, no-fuss platform for PlayStation 5 firmware 1.xx–5.xx, built on the UMTX2 project and optimized for ESP32-S3 boards (16MB flash). This host offers:
 
 - Clean two-stage interface (launch → payloads) based on idlesauce UMTX2  
-- Built-in file manager (`/admin.html`) for hot-swapping `.bin` / `.elf` payloads  
+- Built-in file manager (`/admin`) for hot-swapping `.bin` / `.elf` payloads  
 - SPIFFS-based hosting — no SD card required  
 - Gzip-capable payload support  
 - Auto-flashing via `auto_flash.exe` (no Arduino or Python required) — just plug in, it detects the board/COM port and flashes  
@@ -35,14 +35,15 @@ PS5_EZ_Host is a self-contained, no-fuss platform for PlayStation 5 firmware 1.x
    - Firmware
    - SPIFFS
 
+5. Once complete, plug the device into your PS5 and navigate to `Settings` then `Network` and look for `PS5_EZ_Host`. Before selecting it go to `Options` and select the `2.4 Ghz` band. There is no username or password to connect. Once connected open a WebBrowser on your PS5 and navigate to [http://10.1.1.1](http://10.1.1.1) to see the jailbreak page or optionally navigate to http://10.1.1.1/admin to manage the payloads. A complete video tutorial of this process can be found [here](https://youtu.be/T5Hz1OmEunU). 
 ---
 
 # PS5_EZ_Host
 
 ESP32-S3 based self-hosted web utility platform for PlayStation 5 browser tools.
 
-![Main Screen](screenshot_main.webp)  
-![Alternate View](index2.webp)
+![Main Screen](screenshot_main.webp) - Accessible at [http://10.1.1.1](http://10.1.1.1)
+![Alternate View](index2.webp) - Accessible at [http://10.1.1.1/admin](http://10.1.1.1/admin)
 
 ## Overview
 PS5_EZ_Host runs entirely from an ESP32-S3 board, serving a lightweight HTML/JS interface to the PS5 web browser.  
