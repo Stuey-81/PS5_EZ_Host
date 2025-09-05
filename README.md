@@ -100,7 +100,7 @@ Use this to rename buttons, change descriptions, add/remove entries, or change o
 
    * `displayTitle` — button label on the main screen.
    * `description`, `author`, `version` — text shown in details.
-   * `fileName` — **just the filename** you uploaded (e.g., `kstuff.elf`, `etaHEN-2.2B.bin`).
+   * `fileName` — **just the filename** you uploaded (e.g., `kstuff.elf`, `etaHEN-2.3B.bin`).
 
      > No path editing is required; upload the file and set its **filename** here.
 3. **Upload** the modified `payload_map.js` back via **`/admin`** and refresh **`http://10.1.1.1`**.
