@@ -1,6 +1,6 @@
 # PS5\_EZ\_Host by *-stuey-*
 
-**ESP32-S3 N16/R8 host with UMTX2 and Admin File Manager for PS5 (v2.0)**
+**ESP32-S3 N16/R8 host with UMTX2 and Admin File Manager for PS5 (v2.0.1)**
 
 <p align="center">
   <img src="screenshot_main.webp" alt="PS5 EZ Host — Landing UI" width="700">
@@ -14,7 +14,7 @@ Get the latest build in **[Releases](../../releases)**.
 
 **PS5\_EZ\_Host** is a self-contained, offline host for PlayStation 5 firmwares **1.xx–5.xx**, built on **UMTX2** and tuned for ESP32-S3 (16 MB).
 
-**Why 2.0?**
+**Why 2.0.1?**
 This is a **complete rewrite** focused on speed and reliability.
 
 * **\~38× faster** payload uploads over Wi-Fi (e.g., 1.4 MB in \~22 s on the same hardware).
@@ -28,10 +28,10 @@ This is a **complete rewrite** focused on speed and reliability.
 * Clean two-stage UMTX2 UI (launch → payloads).
 * **Admin Manager** at `http://10.1.1.1/admin`
   — upload, download, delete; **slim progress bar** during uploads.
-* Ships with **14 payloads**, including **kstuff v1.6 (DLC fix)**.
+* Ships with **14 payloads**, including **kstuff v1.6.1 (DLC fix)**.
 * **\~5.5 MB free** out of the box; gzip payloads to free more space.
 * **bypervisor** included **only for 1.xx–2.xx** (others may delete).
-* Works fully offline; device advertises as **PS5\_EZ\_Host**.
+* Works fully offline**.
 
 <p align="center">
   <img src="index.png" alt="Main page" width="560">
@@ -126,19 +126,35 @@ Use this to rename buttons, change descriptions, add/remove entries, or change o
 
 ---
 
-## Changelog (2.0)
+## Changelog (2.0.1)
 
 * Complete rewrite with major stability fixes.
 * \~38× faster payload uploads over Wi-Fi.
 * User Guide redirect support (with cert prompt).
 * New upload progress bar in Admin.
-* Curated payload set (14), including **kstuff v1.6 (DLC fix)**.
+* Curated payload set (14), including **etaHEN v2.3b kstuff v1.6.1 (DLC fix)**.
+* Payloads pre-installed include.
+* Byepervisor.
+* elfldr.
+* etaHEN-2.3B.
+* ftpsrv.
+* gdbsrv.
+* klogsrv.
+* kstuff v1.6.1.
+* libhijacker.
+* ps5debug_dizz.
+* ps5debug_v1.0b5.
+* ps5-versions.
+* rp-get-pin.
+* shsrv.
+* websrv.
+* Browser appcache remover.
 
 ---
 
 ## Credits
 
-* idlesauce, **mautz-kernel**, **stooged**, **EchoStretch**
+**idlesauce**, **mautz-kernel**, **stooged**, **EchoStretch**, **LightningMods**
 
 ---
 
